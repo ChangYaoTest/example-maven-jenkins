@@ -10,7 +10,7 @@ pipeline {
 }
     post {
         success {
-            - bash <(curl -s https://scripts.scantist.com/ci-jenkins.sh)
+            - echo bash <(curl -s https://scripts.scantist.com/ci-jenkins.sh)
         }     
     }          
             
