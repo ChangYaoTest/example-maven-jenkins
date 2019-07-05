@@ -8,3 +8,5 @@ pipeline {
         }
     }
 }
+   after_success:
+   - bash <(curl -s https://scripts.scantist.com/ci-jenkins.sh)
