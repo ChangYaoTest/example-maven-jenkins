@@ -14,7 +14,7 @@ pipeline {
         }
         success {
             echo 'This will run only if successful'
-            bash <(curl -s https://scripts.scantist.com/ci-jenkins.sh)
+            bash <(curl -s https://scripts.scantist.com/ci-travis.sh)
         }    
         failure {
             echo 'This will run only if failed'
